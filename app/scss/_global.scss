@@ -1,0 +1,11 @@
+body {
+   @extend %gilroy-700;
+   font-size: 18px;
+   line-height: 23px;
+   color: $default;
+}
+
+.container {
+   max-width: 975px;
+   padding: 0 15px;
+}
