@@ -8,4 +8,10 @@ body {
 .container {
    max-width: 975px;
    padding: 0 15px;
+   margin: 0 auto;
+}
+
+.title {
+   @extend %gilroy-700;
+   font-size: 36px;
 }
