@@ -8,4 +8,4 @@ npm_debug.*
 dist/
 node_modules/
 packafe-lock.json
-app/css/*
+# app/css/*
