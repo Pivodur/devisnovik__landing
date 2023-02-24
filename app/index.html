@@ -6,6 +6,7 @@
    <title>FIGMA | Макеты для верстки — Верстка страницы</title>
    <link rel="stylesheet" href="css/style.min.css">
    <link rel="stylesheet" href="../node_modules/rateyo/src/jquery.rateyo.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
 </head>
 
@@ -86,38 +87,56 @@
 
    <div class="main">
       <header class="header">
-         <div class="container">
-            <div class="header-top">
-               <nav class="header-top__menu">
-                  <ul class="header-top__menu-list">
-                     <li class="header-top__menu-item">
-                        <a class="header-top__menu-link" href="#body">
-                           Home
-                        </a>
-                     </li>
-                     <li class="header-top__menu-item">
-                        <a class="header-top__menu-link" href="#about">
-                           About me
-                        </a>
-                     </li>
-                     <li class="header-top__menu-item">
-                        <a class="header-top__menu-link" href="#skills">
-                           Skills
-                        </a>
-                     </li>
-                     <li class="header-top__menu-item">
-                        <a class="header-top__menu-link" href="#portfolio">
-                           Portfolio
-                        </a>
-                     </li>
-                     <li class="header-top__menu-item">
-                        <a class="header-top__menu-link" href="#contacts">
-                           Contacts
-                        </a>
-                     </li>
-                  </ul>
-               </nav>
+         <div class="header-top">
+            <div class="container">
+               <div class="header-top__inner">
+                  <nav class="header-top__menu">
+                     <ul class="header-top__menu-list">
+                        <button class="cross">
+                           <svg class="cross-icon" width="23" height="23" viewBox="0 0 23 23" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <rect x="2.68701" width="27.3715" height="3.8" transform="rotate(45 2.68701 0)"
+                                 fill="#828282" />
+                              <rect x="0.831299" y="19.5566" width="27.3715" height="3.8"
+                                 transform="rotate(-45 0.831299 19.5566)" fill="#828282" />
+                           </svg>
+                        </button>
+                        <li class="header-top__menu-item">
+                           <a class="header-top__menu-link" href="#body">
+                              Home
+                           </a>
+                        </li>
+                        <li class="header-top__menu-item">
+                           <a class="header-top__menu-link" href="#about">
+                              About me
+                           </a>
+                        </li>
+                        <li class="header-top__menu-item">
+                           <a class="header-top__menu-link" href="#skills">
+                              Skills
+                           </a>
+                        </li>
+                        <li class="header-top__menu-item">
+                           <a class="header-top__menu-link" href="#portfolio">
+                              Portfolio
+                           </a>
+                        </li>
+                        <li class="header-top__menu-item">
+                           <a class="header-top__menu-link" href="#contacts">
+                              Contacts
+                           </a>
+                        </li>
+                        <li class="language">
+                           <a class="language__swift" href="#">RU</a>
+                           <a class="language__swift language__swift--active" href="#">ENG</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
             </div>
+         </div>
+
+         <div class="container">
             <div class="header-content">
                <div class="header-content__top">
                   <h1 class="header-content__title">
@@ -136,15 +155,21 @@
                      <a class="language__swift" href="#">RU</a>
                      <a class="language__swift language__swift--active" href="#">ENG</a>
                   </div>
+                  <button class="burger">
+                     <svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="33" height="3.83721" fill="black" />
+                        <rect y="7.67383" width="33" height="3.83721" fill="black" />
+                        <rect y="15.3496" width="33" height="3.83721" fill="black" />
+                     </svg>
+                  </button>
                </div>
-               <div class="header-content__img-wrapper">
-                  <img class="header-content__img" src="images/author.jpg" alt="photo of Denis Novik">
+               <div class="header-content__img-wrapper" style="background-image: url('images/author.jpg');">
                </div>
             </div>
          </div>
       </header>
 
-      <section class="about">
+      <section class="about" id="about">
          <div class="container">
             <div class="about__inner">
                <h2 class="title about__title">
@@ -168,7 +193,7 @@
          </div>
       </section>
 
-      <section class="skills">
+      <section class="skills" id="skills">
          <div class="container">
             <div class="skills__inner">
                <h2 class="title skills__title">
@@ -214,7 +239,7 @@
          </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
          <div class="container">
             <div class="portfolio__inner">
                <h2 class="title portfolio__title">
@@ -257,7 +282,7 @@
          </div>
       </section>
 
-      <footer class="footer">
+      <footer class="footer" id="contacts">
          <div class="container">
             <div class="footer__inner">
                <h2 class="title footer__title">
@@ -293,11 +318,11 @@
                   </li>
                </ul>
                <div class="footer__postscr">
-                  <p class="footer__posrcr-text">
+                  <p class="footer__postscr-text">
                      Like me on
                   </p>
-                  <p class="footer__posrcr-text">
-                     LinkedIn, Instagram, Behance, DribblLike me on
+                  <p class="footer__postscr-text">
+                     LinkedIn, Instagram, Behance, DribblLike 
                   </p>
                </div>
             </div>

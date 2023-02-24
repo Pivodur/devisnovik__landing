@@ -1,3 +1,8 @@
+* {
+   scroll-behavior: smooth;
+
+}
+
 body {
    @extend %gilroy-500;
    font-size: 18px;
@@ -13,7 +18,7 @@ body {
 
 .title {
    @extend %gilroy-700;
-   font-size: 36px;
+   font-size: 34px;
    line-height: 44px;
    text-align: center;
 }
