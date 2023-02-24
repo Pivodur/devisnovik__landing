@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <title>FIGMA | Макеты для верстки — Верстка страницы</title>
    <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="../node_modules/rateyo/src/jquery.rateyo.css">
    <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
 </head>
 
@@ -170,7 +171,7 @@
       <section class="skills">
          <div class="container">
             <div class="skills__inner">
-               <h2 class="title">
+               <h2 class="title skills__title">
                   Skills
                </h2>
                <p class="skills__text">
@@ -178,35 +179,35 @@
                </p>
                <div class="skills__items">
                   <div class="skills__item">
-                     <img class="skills__img" src="images/skills/1.jpg" alt="Adobe Photoshop">
+                     <img class="skills__img" src="images/skills/1.svg" alt="Adobe Photoshop">
                      <h5 class="skills__name">
                         Adobe
                         Photoshop
                      </h5>
-                     <div class="star"></div>
+                     <div class="star" data-rateyo-rating="4"></div>
                   </div>
                   <div class="skills__item">
-                     <img class="skills__img" src="images/skills/2.jpg" alt="Adobe Illustrator">
+                     <img class="skills__img" src="images/skills/2.svg" alt="Adobe Illustrator">
                      <h5 class="skills__name">
                         Adobe
                         Illustrator
                      </h5>
-                     <div class="star"></div>
+                     <div class="star" data-rateyo-rating="3"></div>
                   </div>
                   <div class="skills__item">
-                     <img class="skills__img" src="images/skills/3.jpg" alt="Adobe After Effects">
+                     <img class="skills__img" src="images/skills/3.svg" alt="Adobe After Effects">
                      <h5 class="skills__name">
-                        Adobe
+                        Adobe <br>
                         After Effects
                      </h5>
-                     <div class="star"></div>
+                     <div class="star" data-rateyo-rating="4"></div>
                   </div>
                   <div class="skills__item">
-                     <img class="skills__img" src="images/skills/4.jpg" alt="Figma">
+                     <img class="skills__img" src="images/skills/4.svg" alt="Figma">
                      <h5 class="skills__name">
                         Figma
                      </h5>
-                     <div class="star"></div>
+                     <div class="star" data-rateyo-rating="4"></div>
                   </div>
                </div>
             </div>
@@ -216,7 +217,7 @@
       <section class="portfolio">
          <div class="container">
             <div class="portfolio__inner">
-               <h2 class="title">
+               <h2 class="title portfolio__title">
                   Portfolio
                </h2>
                <div class="portfolio__items">
@@ -259,7 +260,7 @@
       <footer class="footer">
          <div class="container">
             <div class="footer__inner">
-               <h2 class="title">
+               <h2 class="title footer__title">
                   Contacts
                </h2>
                <div class="footer__text">
@@ -303,6 +304,7 @@
          </div>
       </footer>
    </div>
+   <script src="js/main.min.js"></script>
 </body>
 
 </html>
